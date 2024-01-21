@@ -10,7 +10,7 @@ class Component<T> {
   constructor(public props: T) {}
 }
 
-class Page<T extends Title> extends Component<T> {
+class Page extends Component<Title> {
   pageInfo() {
     console.log(this.props.title);
   }
